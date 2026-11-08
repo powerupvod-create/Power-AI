@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050b18;
+  color: #eafaff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 650px;
+  margin: auto;
+  padding: 22px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #164d68;
+  padding-bottom: 18px;
+}
+
+header h2 {
+  color: #55eaff;
+  letter-spacing: 2px;
+}
+
+header span, footer {
+  color: #65aabd;
+  font-size: 10px;
+}
+
+main {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.orb {
+  width: 180px;
+  height: 180px;
+  margin: 15px auto 30px;
+  border: 2px solid #36dfff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 25px #00bfff, inset 0 0 25px #007caa;
+  animation: pulse 2s infinite;
+}
+
+.core {
+  width: 115px;
+  height: 115px;
+  border: 2px solid #9af5ff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 55px;
+  color: #65efff;
+  text-shadow: 0 0 20px #00cfff;
+}
+
+h1 {
+  color: #65eaff;
+  letter-spacing: 5px;
+}
+
+#status {
+  color: #78aabb;
+  margin: 12px;
+}
+
+#chat {
+  height: 230px;
+  overflow-y: auto;
+  margin-top: 30px;
+  padding: 15px;
+  background: #0a1728;
+  border: 1px solid #164d68;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.message {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #102b40;
+  font-size: 14px;
+}
+
+.user {
+  border-left: 3px solid #00d9ff;
+}
+
+.bot {
+  border-left: 3px solid #a78bfa;
+}
+
+.controls {
+  display: flex;
+  gap: 7px;
+  margin-top: 15px;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #17617d;
+  border-radius: 10px;
+  background: #0b1b2d;
+  color: white;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  background: #00bde8;
+  color: #00101c;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 40px #00d9ff;
+  }
+}
